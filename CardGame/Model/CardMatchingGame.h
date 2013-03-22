@@ -20,10 +20,9 @@
 -(Card *)cardAtIndex:(NSUInteger)index;
 -(void)reset;
 
-@property(nonatomic, getter = isStarted)BOOL started;
-@property(readonly,nonatomic)int score;
-@property(strong,nonatomic)NSString *status;
-@property(nonatomic)NSUInteger numbercOfCardMatchMode;
-@property(nonatomic, strong)UIImage *cardBackgroundImage;
+@property(nonatomic, getter = isStarted)BOOL started; // a bool which define the if the game is started
+@property(readonly,nonatomic)int score; // the score that the user has achieved in the game
+@property(strong,nonatomic)NSString *status; // which cards that are flip or match
+@property(nonatomic)NSUInteger numbercOfCardMatchMode; // how many card that has to be turn to make a match
 
 @end

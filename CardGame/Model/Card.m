@@ -10,8 +10,9 @@
 
 @implementation Card
 
--(int)match:(NSArray *)otherCards with:(NSUInteger)gameMode{
+-(int)match:(NSArray *)otherCards{
     int score = 0;
+    //Compare the content in the cards and return a score if they match
     for (Card *card in otherCards) {
         if ([card.contents isEqualToString:self.contents]) {
             score = 1; 

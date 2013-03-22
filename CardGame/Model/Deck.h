@@ -13,11 +13,12 @@
 
 -(void)addCard:(Card *) card atTop:(BOOL)atTop;
 
--(Card *)drawRandomCard;
--(Card *)drawNumericCard;
+-(Card *)drawRandomCard; //Draw a random card from the deck
+-(Card *)drawNumericCard;//Draw cards in a numeric order from the deck 
 
-@property (nonatomic, strong)UIImage *cardBacksideBackgroundImage;
-@property (nonatomic, strong)UIImage *cardFrontsideBackgroundImage;
+@property (nonatomic, strong)NSString *cardBacksideBackgroundImage; //name on the backside image of the cards
+@property (nonatomic, strong)NSString *cardFrontsideBackgroundImage; //name on the frontside image of the cards
+
 
 
 @end

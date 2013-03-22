@@ -11,10 +11,10 @@
 
 @interface PlayingCard : Card
 
-@property(strong, nonatomic)NSString *suit;
-@property(nonatomic) NSUInteger rank;
+@property(strong, nonatomic)NSString *suit; // the suit the card have
+@property(nonatomic) NSUInteger rank; // the rank the card have
 
-+ (NSArray *)validSuits;
-+ (NSUInteger)maxRank;
++ (NSArray *)validSuits; //all the suits that can accur on a card
++ (NSUInteger)maxRank; //the highest rank that a card can have.
 
 @end
